@@ -19,19 +19,23 @@
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="center"
+        android:layout_gravity="fill"
         android:columnCount="2"
-        android:padding="8dp"
-        android:rowCount="3">
+        android:padding="84dp"
+        android:rowCount="3"
+        app:layout_constraintEnd_toEndOf="parent">
 
         <!-- Read DONE-->
         <ImageView
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:layout_row="0"
             android:layout_rowWeight="1"
+            android:layout_column="0"
             android:layout_columnWeight="1"
-            android:scaleType="centerCrop"
+            android:scaleType="fitCenter"
             android:src="@drawable/box1" />
+
         <!-- Water DONE -->
         <ImageView
             android:layout_width="0dp"
@@ -69,16 +73,16 @@
             android:scaleType="fitXY"
             android:src="@drawable/box5" />
 
-        <!-- Son Energy -->
+        <!-- Sun Energy -->
         <ImageView
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:scaleType="fitXY"
+            android:scaleType="fitCenter"
             android:src="@drawable/box6" />
 
-        <!-- PMO -->
+<!--        &lt;!&ndash; Clean &ndash;&gt;
         <ImageView
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -87,14 +91,14 @@
             android:scaleType="fitXY"
             android:src="@drawable/box7" />
 
-        <!-- Free Drugs -->
+        &lt;!&ndash; Free Drugs &ndash;&gt;
         <ImageView
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
             android:scaleType="fitXY"
-            android:src="@drawable/box8" />
+            android:src="@drawable/box8" />-->
 
 
     </GridLayout>
